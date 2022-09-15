@@ -10,7 +10,7 @@ export default function PersonDialog(props) {
 
   return (
     <Dialog onClose={handleClose} open={open} >
-      <DialogTitle textAlign='center'>{name}<br></br>{company}</DialogTitle>
+      <DialogTitle textAlign='center' fontSize={{xs:14,sm:16,md:18,lg:20}}>{name}<br></br>{company}</DialogTitle>
       <DialogContent dividers >
         <Grid
           item
@@ -19,13 +19,12 @@ export default function PersonDialog(props) {
           alignItems="center"
           justifyContent="center"
           marginBottom={2}
+          
         >
          <img src={pic} alt={name} ></img>
         </Grid>
-        <DialogContentText >
-        <Typography>
+        <DialogContentText fontSize={{xs:12,sm:14,md:16,lg:18}}>
           {bio}
-        </Typography>
         </DialogContentText>
       </DialogContent>
       <DialogActions >

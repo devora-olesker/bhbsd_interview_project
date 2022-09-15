@@ -30,8 +30,8 @@ export default function People() {
     return (
         <>
             <Stack justifyContent="center" alignItems="center" marginBottom={3} >
-                <Box marginTop={2} marginBottom={4} textAlign='center'><Typography color={"white"} fontSize={30}>MEET OUR 30 FEATERED INVESTORS</Typography></Box>
-                <Grid2 container spacing={{ xs: 2, sm: 2, md: 4, lg: 4 }} columns={{ xs: 2, sm: 2, md: 4, lg: 5 }} disableEqualOverflow display="flex" >
+                <Box marginTop={2} marginBottom={4} textAlign='center'><Typography color={"white"} fontSize={{xs:18,sm:22,md:28,lg:30}}>MEET OUR 30 FEATERED INVESTORS</Typography></Box>
+                <Grid2 container spacing={{ xs: 1, sm: 2, md: 4, lg: 4 }} columns={{ xs: 2, sm: 3, md: 4, lg: 5 }} disableEqualOverflow display="flex" >
                     {
                         //show person component for each item in the list of investors 
                         people.map((p) => (
