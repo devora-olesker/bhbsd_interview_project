@@ -22,7 +22,7 @@ export default function Person(props) {
     return (
         <>
             <Grid2 onClick={handleClickOpen} xs={1} sm={1} md={1} lg={1} display="flex" justifyContent="center" alignItems="center" key={person.id} >
-                <Stack spacing={1} maxWidth={{ xs: 130, sm: 200, md: 300, lg: 300 }} >
+                <Stack spacing={1} maxWidth={{ xs: 130, sm: 200, md: 300, lg: 300 }} class="person" >
                     <img src={person.speaker_head_shot_to_display} alt="headshot" ></img>
                     <box >
                         <Typography fontSize={{ xs: 12, sm: 14, md: 16, lg: 18 }} color={'white'}>{person.firstname + " " + person.lastname}</Typography>
